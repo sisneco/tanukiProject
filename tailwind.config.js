@@ -11,8 +11,25 @@ module.exports = {
     extend: {
       fontFamily: {
         notojp: ["Noto Sans JP"],
+        oswald: ["Oswald"],
       },
       keyframes: {
+        "slide-top": {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          to: {
+            transform: "translateY(-20px)",
+          },
+        },
+        "slide-bottom": {
+          "0%": {
+            transform: "translateY(-20px)",
+          },
+          to: {
+            transform: "translateY(0px)",
+          },
+        },
         // vibrate
         "vibrate-1": {
           "0%,to": {
@@ -72,6 +89,10 @@ module.exports = {
           "slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both",
         "text-focus-in":
           "text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both",
+        "slide-top":
+          "slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
+        "slide-bottom":
+          "slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
       },
     },
   },

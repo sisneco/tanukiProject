@@ -4,20 +4,20 @@
       className="flex w-full h-full md:justify-center md:gap-x-16 items-center text-2xl text-gray-800"
     >
       <li>
-        <NuxtLink to="/">Home </NuxtLink>
+        <NuxtLink to="/">HOME</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/profile">MyProfile </NuxtLink>
+        <NuxtLink to="/about">ABOUT </NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/">Home </NuxtLink>
+        <NuxtLink to="/">PORTFOLIO</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/">Home </NuxtLink>
+        <NuxtLink to="/">CONTACTS</NuxtLink>
       </li>
     </ul>
   </nav>
-  <div className="w-screen  font-notojp md:px-24">
+  <div className="w-screen font-oswald  font-notojp md:px-56">
     <slot />
   </div>
 </template>
