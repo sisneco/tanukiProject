@@ -1,9 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  imports: {
+    dirs: ["stores"],
+  },
   devtools: { enabled: true },
   css: ["@fortawesome/fontawesome-svg-core/styles.css"],
   plugins: ["@/plugins/fontawesome.ts"],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
   ssr: false,
   app: {
     head: {
