@@ -1,28 +1,41 @@
 <script setup>
 import { storeToRefs } from "pinia";
 
-const isClick = ref(false);
+const isClick = ref(true);
 
 const designSt = storeToRefs(designStore());
+
+designStore().initAction();
 </script>
 
 <template>
-  <header>
+  <header class="mt-4">
     <div
       class="openbtn1 z-50"
-      :class="[{ active: isClick }, { hidden: !designSt.isMobileSize.value }]"
-      @click="isClick = !isClick"
+      :class="[
+        { active: designSt.isClickHamburger.value },
+        { hidden: !designSt.isMobileSize.value },
+      ]"
+      @click="designStore().clickHamburger()"
     >
       <span></span><span></span><span></span>
     </div>
     <nav
       className=" w-screen h-24"
-      class="nav_content"
-      :class="{ active: isClick }"
+      :class="[
+        { active: designSt.isClickHamburger.value },
+        { nav_content: designSt.isMobileSize.value },
+      ]"
     >
       <ul
-        className="flex w-full h-full items-center  text-sm text-gray-800 font-notojp md:justify-center md:gap-x-16 md:text-2xl"
+        className="flex flex-col w-full h-full items-center  text-4xl  text-gray-800 font-notojp  justify-center gap-y-1 md:gap-y-0 md:flex-row md:gap-x-16 md:text-2xl"
       >
+        <h2
+          :class="{ hidden: !designSt.isMobileSize.value }"
+          class="text-5xl fixed top-32 font-oswald italic drop-shadow pb-2 w-full"
+        >
+          Tanuki Project
+        </h2>
         <HeaderListComponent path="/" text="HOME"></HeaderListComponent>
         <HeaderListComponent path="/about" text="ABOUT"></HeaderListComponent>
         <HeaderListComponent
@@ -109,11 +122,10 @@ a {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: red;
+  background-color: white;
   top: 0%;
   right: 100%; /* メニューを画面の外に飛ばす */
   z-index: 5;
-  background: rgb(110, 110, 110);
   transition: 0.5s;
   text-align: center;
 }

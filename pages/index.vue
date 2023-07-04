@@ -22,8 +22,10 @@ function goAnimationAboutMeMouseLeave() {
     className="w-full flex flex-col text-center items-center gap-y-8 py-14"
   >
     <p className="text-5xl text-red-600">-TakeYour EnjoyLife-</p>
-    <p className="text-9xl font-bold border-b border-black">Tanuki Moon</p>
-    <p className="text-2xl">お客様のありがとうのために</p>
+    <p className="text-9xl font-bold text-white md:text-black">Tanuki Moon</p>
+    <p className="text-2xl  text-white md:text-black">
+      お客様のありがとうのために
+    </p>
   </section>
 
   <div className="w-full h-96 flex flex-col md:flex-row">
@@ -31,7 +33,7 @@ function goAnimationAboutMeMouseLeave() {
       <div
         @mouseover="goAnimationAboutMeMouseOver()"
         @mouseleave="goAnimationAboutMeMouseLeave()"
-        class="rounded-full w-96 h-96 flex justify-center items-center cursor-pointer border-4 border-teal-400"
+        class="rounded-full w-80 h-80 flex justify-center items-center cursor-pointer border-4 border-teal-400 md:w-96 md:h-96"
         :class="[
           { 'animate-slide-top': isAnimationAboutmeTop },
           { 'animate-slide-bottom': isAnimationAboutmeBottom },
@@ -39,7 +41,7 @@ function goAnimationAboutMeMouseLeave() {
       >
         <NuxtLink
           to="/profile"
-          className="text-center  text-teal-500 text-5xl font-semibold w-full h-full flex  flex-col items-center justify-center"
+          className="text-center  text-teal-500 text-5xl font-semibold  flex flex-col items-center justify-center "
         >
           <h2>About Me</h2>
           <p>→</p>
@@ -47,10 +49,10 @@ function goAnimationAboutMeMouseLeave() {
       </div>
     </section>
     <section
-      className=" w-full h-full md:w-1/2 flex  flex-col justify-center items-end "
+      className=" w-full h-full md:w-1/2 flex   flex-col justify-center item-center text-center md:items-end "
     >
-      <h2 className="text-8xl italic">FollowMe!!</h2>
-      <div className="flex flex-col items-center gap-y-2 mt-4">
+      <h2 className="text-6xl italic md:text-8xl">FollowMe!!</h2>
+      <div className="flex  items-center gap-y-2 mt-4 md:flex-col">
         <a
           href="https://twitter.com/_TanukiMoon"
           target="_blank"
@@ -78,7 +80,7 @@ function goAnimationAboutMeMouseLeave() {
     </section>
     <img
       src="@/assets/image.jpg"
-      className="fixed h-screen md:w-80 md:top-0 md:left-32 object-cover -z-50 "
+      class="absolute top-20 h-[520px] w-screen md:fixed md:h-screen md:w-80 md:top-0 md:left-32 object-cover -z-50"
     />
   </div>
 </template>

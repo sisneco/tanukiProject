@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
   <li>
-    <NuxtLink :to="props.path">
+    <NuxtLink :to="props.path" @click="designStore().resetIsHamburger()">
       {{ props.text }}
     </NuxtLink>
   </li>
