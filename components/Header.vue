@@ -9,7 +9,7 @@ designStore().initAction();
 </script>
 
 <template>
-  <header class="mt-4">
+  <header class="mt-4 fixed top-0 left-0 md:static">
     <div
       class="openbtn1 z-50"
       :class="[

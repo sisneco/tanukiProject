@@ -30,23 +30,20 @@ function goAnimationAboutMeMouseLeave() {
 
   <div className="w-full h-96 flex flex-col md:flex-row">
     <section className=" w-full h-full md:w-1/2 flex  justify-center">
-      <div
-        @mouseover="goAnimationAboutMeMouseOver()"
-        @mouseleave="goAnimationAboutMeMouseLeave()"
-        class="rounded-full w-80 h-80 flex justify-center items-center cursor-pointer border-4 border-teal-400 md:w-96 md:h-96"
-        :class="[
-          { 'animate-slide-top': isAnimationAboutmeTop },
-          { 'animate-slide-bottom': isAnimationAboutmeBottom },
-        ]"
-      >
-        <NuxtLink
-          to="/profile"
-          className="text-center  text-teal-500 text-5xl font-semibold  flex flex-col items-center justify-center "
+      <NuxtLink to="/about">
+        <div
+          @mouseover="goAnimationAboutMeMouseOver()"
+          @mouseleave="goAnimationAboutMeMouseLeave()"
+          class="rounded-full w-80 h-80 flex justify-center items-center cursor-pointer border-4 border-teal-400 md:w-96 md:h-96 flex-col text-center text-teal-500 text-5xl font-semibold"
+          :class="[
+            { 'animate-slide-top': isAnimationAboutmeTop },
+            { 'animate-slide-bottom': isAnimationAboutmeBottom },
+          ]"
         >
           <h2>About Me</h2>
           <p>→</p>
-        </NuxtLink>
-      </div>
+        </div>
+      </NuxtLink>
     </section>
     <section
       className=" w-full h-full md:w-1/2 flex   flex-col justify-center item-center text-center md:items-end "
