@@ -82,7 +82,7 @@ function goAnimationAboutMeMouseLeave() {
   </div>
 </template>
 
-<style>
+<style scoped>
 .strava {
   background-color: #fc4c02;
   color: white;
