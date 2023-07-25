@@ -2,11 +2,13 @@
   <div
     class="flex items-center flex-col justify-center font-notojp gap-y-4 mt-8"
   >
-    <h1 class="text-8xl font-oswald">Contact</h1>
-    <h2 class="text-4xl">お問い合わせ</h2>
-    <p>私について知りたい方、気になる方はぜひお気軽に下記まで！</p>
-    <div>
-      <p class="text-4xl">
+    <h1 class="text-8xl font-oswald text-teal-400">Contact</h1>
+    <h2 class="text-3xl">お問い合わせ</h2>
+    <p class="text-sm md:text-base">
+      私について知りたい方、気になる方はぜひお気軽に下記まで！
+    </p>
+    <div class="mt-8">
+      <p class="flex items-center gap-x-2 text-xl md:text-4xl">
         <a
           href="https://twitter.com/_TanukiMoon"
           target="_blank"
@@ -16,12 +18,16 @@
         </a>
         Twitter @_TanukiMoon
       </p>
-      <p class="text-4xl mt-4">
+      <p class="flex items-center gap-x-2 text-xl mt-4 md:text-4xl">
         <fasome :icon="['fab', 'google']" class="google" />
         Email tanukimoon369@gmail.com
       </p>
     </div>
   </div>
+  <img
+    src="@/assets/image.jpg"
+    class="absolute md:fixed md:h-80 md:w-screen md:bottom-20 md:left-0 object-cover -z-50 mt-8"
+  />
 </template>
 
 <style scoped>

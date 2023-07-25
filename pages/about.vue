@@ -1,25 +1,25 @@
 <template>
-  <div class="flex flex-col items-center mt-8">
-    <div class="flex w-full">
-      <AboutSection title="ABOUT">
-        <h3 class="text-7xl mt-2">HN. Tanuki Moon</h3>
-        <ul class="text-xl mt-4 font-notojp gap-y-2 flex flex-col">
+  <div class="px-8 flex flex-col items-center mt-8 md:items-start gap-y-4 mb-8">
+    <div class="flex flex-col-reverse w-full mt-8 md:mt-0 md:flex-row">
+      <AboutSection title="ABOUT" class="w-1/2">
+        <h3 class="text-4xl mt-2 md:text-7xl">HN. Tanuki Moon</h3>
+        <ul class="text-base mt-4 font-notojp gap-y-2 flex flex-col md:text-xl">
           <li>出身：奈良県の田舎（2000人未満の村）</li>
           <li>所在地：大阪（北河内エリア）</li>
           <li>年齢：23歳</li>
           <li>趣味：モータースポーツ、ロードバイク</li>
         </ul>
       </AboutSection>
-      <section class="w-1/2 flex justify-center">
+      <section class="w-full flex justify-center md:w-1/2">
         <img
           src="@/assets/image.jpg"
-          class="w-[400px] h-[400px] rounded-full"
+          class="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full"
         />
       </section>
     </div>
     <section></section>
-    <AboutSection title="HISTORY" class="w-full mt-8">
-      <ul class="font-notojp text-xl flex flex-col gap-y-2 mt-2">
+    <AboutSection title="HISTORY">
+      <ul class="font-notojp text-sm flex flex-col gap-y-2 mt-2 md:text-xl">
         <li>- 1999/08/14 誕生</li>
         <li>- 2018/03/31 奈良県の普通科高校を卒業</li>
         <li>- 2018/04/01 大阪府の情報学部の大学を入学</li>
@@ -35,8 +35,8 @@
       </ul>
     </AboutSection>
 
-    <AboutSection title="SKILL" class="w-full my-8">
-      <ul class="font-notojp text-xl flex flex-col gap-y-2 mt-2">
+    <AboutSection title="SKILL">
+      <ul class="font-notojp text-sm flex flex-col gap-y-2 mt-2 md:text-xl">
         <li>Java - 大学・研修で学習 , 実務経験あり</li>
         <li>C - 大学で学習（基礎のみ）</li>
         <li>HTML - 個人開発で使用（細かい属性等は未習得）</li>
