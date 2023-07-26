@@ -1,4 +1,6 @@
 <script setup>
+useHead({ title: useRoute().meta.title });
+
 // values
 /* AboutMeAnimation ControlFlag */
 const isAnimationAboutmeTop = ref(false);
@@ -78,6 +80,7 @@ function goAnimationAboutMeMouseLeave() {
     <img
       src="@/assets/image.jpg"
       class="absolute top-20 h-[520px] w-screen md:fixed md:h-screen md:w-80 md:top-0 md:left-32 object-cover -z-50"
+      alt="TanukiMoonポートフォリオサイト背景"
     />
   </div>
 </template>
