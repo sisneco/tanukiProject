@@ -1,3 +1,7 @@
+<script setup>
+useHead({ title: "Tanuki Moon - About" });
+</script>
+
 <template>
   <div class="px-8 flex flex-col items-center mt-8 md:items-start gap-y-4 mb-8">
     <div class="flex flex-col-reverse w-full mt-8 md:mt-0 md:flex-row">
@@ -12,8 +16,9 @@
       </AboutSection>
       <section class="w-full flex justify-center md:w-1/2">
         <img
-          src="@/assets/image.jpg"
-          class="w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full"
+          alt="たぬきむーんのアイコン"
+          src="myIcon.jpg"
+          class="w-[250px] h-[250px] md:w-[20vw] md:h-[20vw] rounded-full object-cover"
         />
       </section>
     </div>

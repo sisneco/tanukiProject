@@ -1,3 +1,7 @@
+<script setup>
+useHead({ title: "Tanuki Moon - Contact" });
+</script>
+
 <template>
   <div
     class="flex items-center flex-col justify-center font-notojp gap-y-4 mt-8"
@@ -24,10 +28,6 @@
       </p>
     </div>
   </div>
-  <img
-    src="@/assets/image.jpg"
-    class="absolute md:fixed md:h-80 md:w-screen md:bottom-20 md:left-0 object-cover -z-50 mt-8"
-  />
 </template>
 
 <style scoped>

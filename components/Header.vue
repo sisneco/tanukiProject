@@ -1,8 +1,6 @@
 <script setup>
 import { storeToRefs } from "pinia";
 
-const isClick = ref(true);
-
 const designSt = storeToRefs(designStore());
 
 designStore().initAction();
@@ -30,12 +28,6 @@ designStore().initAction();
       <ul
         className="flex flex-col w-full h-full items-center  text-4xl  text-gray-800 font-notojp  justify-center gap-y-1 md:gap-y-0 md:flex-row md:gap-x-16 md:text-2xl"
       >
-        <h2
-          :class="{ hidden: !designSt.isMobileSize.value }"
-          class="text-5xl fixed top-32 font-oswald italic drop-shadow pb-2 w-full"
-        >
-          Tanuki Project
-        </h2>
         <HeaderListComponent path="/" text="HOME"></HeaderListComponent>
         <HeaderListComponent path="/about" text="ABOUT"></HeaderListComponent>
         <HeaderListComponent

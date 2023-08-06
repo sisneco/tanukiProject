@@ -30,7 +30,7 @@ const props = defineProps({
         Github：<a
           :href="props.github"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           class="border-b border-blue-200 text-blue-600"
         >
           {{ props.github }}

@@ -3,16 +3,19 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["stores"],
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ["@fortawesome/fontawesome-svg-core/styles.css"],
   plugins: ["@/plugins/fontawesome.ts"],
   modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
   ssr: false,
   app: {
     head: {
-      charset: "utf-16",
+      htmlAttrs: {
+        lang: "ja",
+      },
+      charset: "utf-8",
       viewport: "width=device-width,initial-scale=1",
-      title: "Tanuki Moonポートフォリオ",
+      title: "Tanuki Moon Site",
       meta: [{ name: "description", content: "TanukiMoon Portfolio site." }],
       link: [
         { rel: "icon", href: "/icon.png" },
