@@ -14,11 +14,15 @@ const props = defineProps({
   <section
     class="w-[95%] border border-black flex p-4 gap-x-4 flex-col md:flex-row md:w-2/3"
   >
-    <img
-      src="@/assets/image.jpg"
-      alt="イメージ画像"
-      class="w-full h-1/2 md:w-1/3"
-    />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/mgWEmuawjlk"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
     <div class="flex flex-col gap-y-2">
       <h2 class="text-4xl font-oswald">{{ props.title }}</h2>
       <p class="text-sm md:text-xl">

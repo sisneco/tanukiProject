@@ -2,7 +2,7 @@
   <div
     class="w-full flex flex-col items-center mt-20 font-notojp justify-center md:mt-8"
   >
-    <!-- TODO v-forで自動化したい -->
+    <!-- TODO v-forで自動化したい (Classを作ってテンプレート化しよう) -->
     <PortfolioSection
       title="IceBreakApp"
       startAt="2023/04/11"
