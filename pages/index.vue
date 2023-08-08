@@ -16,6 +16,11 @@ function goAnimationAboutMeMouseOver() {
 function goAnimationAboutMeMouseLeave() {
   isAnimationAboutmeBottom.value = true;
   isAnimationAboutmeTop.value = false;
+
+  // アニメーションCSSがあるとz-indexにバグが出るため、タイムアウト処理で消す
+  window.setTimeout(() => {
+    isAnimationAboutmeBottom.value = false;
+  }, 500);
 }
 </script>
 
